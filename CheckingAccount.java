@@ -7,4 +7,9 @@ public class CheckingAccount extends BankAccount{
         super(balance);
         transactions = 0;
     }
+
+    public void deposit(double deposit){
+        
+        transactions++;
+    }
 }
