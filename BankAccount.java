@@ -1,2 +1,23 @@
-public class BankAccount     {
+public class BankAccount{
+    private double balance;
+
+    public BankAccount(double balance){
+        this.balance = balance;
+    }
+
+    public void deposit(double deposit){
+        balance += deposit;
+    }
+
+    public void withdraw(double withdraw){
+        balance += -1 * withdraw;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public String toString() {
+        return "balance=" + balance;
+    }
 }
