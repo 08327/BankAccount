@@ -10,7 +10,7 @@ public class BankAccount{
     }
 
     public void withdraw(double withdraw){
-        balance += -1 * withdraw;
+        balance -= withdraw;
     }
 
     public double getBalance() {
